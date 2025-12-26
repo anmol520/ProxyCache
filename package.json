@@ -1,0 +1,24 @@
+{
+  "name": "proxycache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anmol520/ProxyCache.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anmol520/ProxyCache/issues"
+  },
+  "homepage": "https://github.com/anmol520/ProxyCache#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "lru-cache": "^11.2.4"
+  }
+}
