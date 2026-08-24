@@ -1,2 +1,1 @@
-const Origin =  "http://dummyjson.com";
-module.exports = Origin;
+module.exports = process.env.ORIGIN_URL || 'http://dummyjson.com';

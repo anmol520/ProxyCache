@@ -1,0 +1,15 @@
+services:
+  proxy:
+    build: .
+    ports:
+      - '4000:4000'
+    environment:
+      PORT: 4000
+      ORIGIN_URL: ${ORIGIN_URL:-http://dummyjson.com}
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - redis
+  redis:
+    image: redis:7-alpine
+    ports:
+      - '6379:6379'
